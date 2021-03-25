@@ -11,7 +11,7 @@ ile = int(input("Ile osob chce kupic bilet? "))
 if ile == str:
     print("!Wprowadzono bledne dane!")
 else:
-    x = 0
+    x = 0 # do iterowania w petli..
     while x < ile:
         imie = input("Podaj imie: ")
         nazwisko = input("Podaj nazwisko: ")

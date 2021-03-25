@@ -1,5 +1,5 @@
-A program for booking and implementing tickets for a match of a given team,
+<strong>A program for booking and implementing tickets for a match of a given team,</strong>
 
-saving everything to a file and reading from a file, 
+<strong>saving everything to a file and reading from a file,</strong>
 
-the possibility of deleting after the deadline or in other situations.
+<strong>the possibility of deleting after the deadline or in other situations.</strong>

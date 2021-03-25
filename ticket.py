@@ -18,5 +18,5 @@ else:
         wiek = int(input("Podaj wiek: "))
         nrtel = int(input("Podaj numer telefonu: "))
         kwota = int(input("Podaj pelna kwote biletu: "))
-    x += 1
+        x += 1
 

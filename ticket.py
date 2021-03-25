@@ -20,5 +20,3 @@ else:
         kwota = int(input("Podaj pelna kwote biletu: "))
     x += 1
 
-
-

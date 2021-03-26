@@ -50,3 +50,9 @@ def mecze():
         mecze()
 
 # zapis / odczyt z / do pliku docelowego..
+
+def wrfile(imie,nazwisko,wiek,nrtel,kwota,bilet,mecz):
+    plik = open("zabukowane.txt","w")
+    if plik.writable():
+        plik.write(imie,nazwisko,wiek,nrtel,kwota,bilet,mecz)
+    plik.close()

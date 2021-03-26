@@ -27,11 +27,25 @@ def bukowanie():
         x += 1
 
 def mecze():
-    print("[1] => REAL MADRYT VS FC BARCELONA ")
-    print("[2] => PSG VS O.LYON ")
-    print("[3] => CHELASEA VS LIVERPOOL ")
-    print("[4] => BORUSSIA VS MONACHIUM ")
-    print("[5] => JUVENTUS VS NAPOLI ")
-    print("[6] => A.MADRYT VS CELTA VIGO ")
+    ligowe = input("ligowy czy europejski")
+
+    if ligowe == ligowe:
+     print("[1] => REAL MADRYT VS FC BARCELONA ")
+     print("[2] => PSG VS O.LYON ")
+     print("[3] => CHELASEA VS LIVERPOOL ")
+     print("[4] => BORUSSIA VS MONACHIUM ")
+     print("[5] => JUVENTUS VS NAPOLI ")
+     print("[6] => A.MADRYT VS CELTA VIGO ")
+    elif ligowe == europejski:
+     print("R.MADRYT VS JUVENTUS")
+     print("FC BARCELONA VS MAN.CITY")
+     print("PSG VS LIVERPOOL")
+     print("SZAHTAR DONIECK VS CHELSEA")
+     print("A.MADRYT VS KOPALINA")
+     print("TO.HOTSPUR VS MAN.UTD")
+     print("SEVILLA VS AS.MONACO")
+     print("INTER MEDIOLAN VS SLASK WROCLAW")
+    else:
+        "Wprowadzono zle dane"
 
 

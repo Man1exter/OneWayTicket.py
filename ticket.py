@@ -86,4 +86,4 @@ elif zdarzenie == 2:
 elif zdarzenie == 3:
     rfile()
 elif zdarzenie == 4:
-   print("ok")
+   print(" ")

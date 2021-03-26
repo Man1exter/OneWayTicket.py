@@ -62,3 +62,9 @@ def rfile():
     if plik.readable():
        tekst =  plik.read()
     print(tekst)
+
+zdarzenie = int(input("CO CHCESZ ZROBIC?"))
+print("[1] => bukowanie <= ")
+print("[2] => zobaczyc mecze <= ")
+print("[3] => zapisac kogos <= ")
+print("[4] => zobaczyc zapisanych <=  ")

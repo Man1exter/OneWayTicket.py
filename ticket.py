@@ -68,3 +68,12 @@ print("[1] => bukowanie <= ")
 print("[2] => zobaczyc mecze <= ")
 print("[3] => zapisac kogos <= ")
 print("[4] => zobaczyc zapisanych <=  ")
+
+if zdarzenie == 1:
+    bukowanie()
+elif zdarzenie == 2:
+    mecze()
+elif zdarzenie == 3:
+    wfile()
+elif zdarzenie == 4:
+    rfile()

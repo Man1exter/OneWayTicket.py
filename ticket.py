@@ -30,13 +30,16 @@ def mecze():
     ligowe = int(input("[1]ligowy czy [2]europejski => 1/2 "))
 
     if ligowe == 1:
+
      print("[1] => REAL MADRYT VS FC BARCELONA ")
      print("[2] => PSG VS O.LYON ")
      print("[3] => CHELASEA VS LIVERPOOL ")
      print("[4] => BORUSSIA VS MONACHIUM ")
      print("[5] => JUVENTUS VS NAPOLI ")
      print("[6] => A.MADRYT VS CELTA VIGO ")
+
     elif ligowe == 2:
+
      print("R.MADRYT VS JUVENTUS")
      print("FC BARCELONA VS MAN.CITY")
      print("PSG VS LIVERPOOL")
@@ -45,6 +48,8 @@ def mecze():
      print("TO.HOTSPUR VS MAN.UTD")
      print("SEVILLA VS AS.MONACO")
      print("INTER MEDIOLAN VS SLASK WROCLAW")
+
     else:
+        
         print("Wprowadzono zle dane, popraw")
         mecze()

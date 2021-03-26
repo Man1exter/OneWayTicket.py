@@ -11,7 +11,7 @@ class Czlowiek:
 
 def bukowanie():
  ile = int(input("Ile osob chce kupic bilet? "))
- plik = open("zabukowane.txt","w")
+ plik = open("zabukowane.txt","a")
 
  if ile == str:
     print("!Wprowadzono bledne dane!")
@@ -26,13 +26,21 @@ def bukowanie():
         bilet = input("Bilet[ulgowy][normalny][szkolny]: ")
         mecz = input("Jaki mecz: ")
         if plik.writable():
-         plik.write( imie )
+         plik.write(imie )
+         plik.write(" ")
          plik.write( nazwisko )
+         plik.write(" ")
          plik.write( wiek )
+         plik.write(" ")
          plik.write( nrtel )
+         plik.write(" ")
          plik.write( kwota )
+         plik.write(" ")
          plik.write( bilet )
+         plik.write(" ")
          plik.write( mecz )
+         plik.write(" ")
+         plik.write("\n")
         x += 1
 
 def mecze():

@@ -1,10 +1,11 @@
 class Czlowiek:
-    def __init__(self,imie,nazwisko,wiek,nrtel,kwota):
+    def __init__(self,imie,nazwisko,wiek,nrtel,kwota,bilet):
         self.imie = imie
         self.nazwisko = nazwisko
         self.wiek = wiek
         self.nrtel = nrtel
         self.kwota = kwota
+        self.bilet = bilet
 
 ile = int(input("Ile osob chce kupic bilet? "))
 
@@ -18,5 +19,6 @@ else:
         wiek = int(input("Podaj wiek: "))
         nrtel = int(input("Podaj numer telefonu: "))
         kwota = int(input("Podaj pelna kwote biletu: "))
+        kwota = input("Bilet[ulgowy][normalny][szkolny]: ")
         x += 1
 

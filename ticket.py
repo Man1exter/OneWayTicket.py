@@ -11,6 +11,7 @@ class Czlowiek:
 
 def bukowanie():
  ile = int(input("Ile osob chce kupic bilet? "))
+ plik = open("zabukowane.txt","w")
 
  if ile == str:
     print("!Wprowadzono bledne dane!")
@@ -19,11 +20,19 @@ def bukowanie():
     while x < ile:
         imie = input("Podaj imie: ")
         nazwisko = input("Podaj nazwisko: ")
-        wiek = int(input("Podaj wiek: "))
-        nrtel = int(input("Podaj numer telefonu: "))
-        kwota = int(input("Podaj pelna kwote biletu: "))
+        wiek = (input("Podaj wiek: "))
+        nrtel = (input("Podaj numer telefonu: "))
+        kwota = (input("Podaj pelna kwote biletu: "))
         bilet = input("Bilet[ulgowy][normalny][szkolny]: ")
         mecz = input("Jaki mecz: ")
+        if plik.writable():
+         plik.write( imie )
+         plik.write( nazwisko )
+         plik.write( wiek )
+         plik.write( nrtel )
+         plik.write( kwota )
+         plik.write( bilet )
+         plik.write( mecz )
         x += 1
 
 def mecze():
@@ -51,29 +60,22 @@ def mecze():
 
 # zapis / odczyt z / do pliku docelowego po dopisaniu 1funckji aktywnej..
 
-def wfile(imie,nazwisko,wiek,nrtel,kwota,bilet,mecz):
-    plik = open("zabukowane.txt","w")
-    if plik.writable():
-        plik.write(imie,nazwisko,wiek,nrtel,kwota,bilet,mecz)
-    plik.close()
-
 def rfile():
     plik = open("zabukowane.txt","r")
     if plik.readable():
        tekst =  plik.read()
     print(tekst)
 
+print("[1] => bukowanie + zapis do pliku <= ")
+print("[2] => zobaczyc aktualne mecze <= ")
+print("[3] => zobaczyc zapisane osoby <=  ")
 zdarzenie = int(input("CO CHCESZ ZROBIC?"))
-print("[1] => bukowanie <= ")
-print("[2] => zobaczyc mecze <= ")
-print("[3] => zapisac kogos <= ")
-print("[4] => zobaczyc zapisanych <=  ")
 
 if zdarzenie == 1:
     bukowanie()
 elif zdarzenie == 2:
     mecze()
 elif zdarzenie == 3:
-    wfile()
-elif zdarzenie == 4:
     rfile()
+elif zdarzenie == 4:
+   print("ok")

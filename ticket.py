@@ -51,8 +51,14 @@ def mecze():
 
 # zapis / odczyt z / do pliku docelowego..
 
-def wrfile(imie,nazwisko,wiek,nrtel,kwota,bilet,mecz):
+def wfile(imie,nazwisko,wiek,nrtel,kwota,bilet,mecz):
     plik = open("zabukowane.txt","w")
     if plik.writable():
         plik.write(imie,nazwisko,wiek,nrtel,kwota,bilet,mecz)
     plik.close()
+
+def rfile():
+    plik = open("zabukowane.txt","r")
+    if plik.readable():
+       tekst =  plik.read()
+    print(tekst)

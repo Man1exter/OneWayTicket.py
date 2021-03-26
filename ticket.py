@@ -49,7 +49,7 @@ def mecze():
         print("Wprowadzono zle dane, popraw")
         mecze()
 
-# zapis / odczyt z / do pliku docelowego..
+# zapis / odczyt z / do pliku docelowego po dopisaniu 1funckji aktywnej..
 
 def wfile(imie,nazwisko,wiek,nrtel,kwota,bilet,mecz):
     plik = open("zabukowane.txt","w")

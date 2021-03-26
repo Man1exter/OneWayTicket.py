@@ -7,11 +7,13 @@ class Czlowiek:
         self.kwota = kwota
         self.bilet = bilet
 
-ile = int(input("Ile osob chce kupic bilet? "))
 
-if ile == str:
+def bukowanie():
+ ile = int(input("Ile osob chce kupic bilet? "))
+
+ if ile == str:
     print("!Wprowadzono bledne dane!")
-else:
+ else:
     x = 0 # do iterowania w petli..
     while x < ile:
         imie = input("Podaj imie: ")
@@ -19,6 +21,8 @@ else:
         wiek = int(input("Podaj wiek: "))
         nrtel = int(input("Podaj numer telefonu: "))
         kwota = int(input("Podaj pelna kwote biletu: "))
-        kwota = input("Bilet[ulgowy][normalny][szkolny]: ")
+        bilet = input("Bilet[ulgowy][normalny][szkolny]: ")
         x += 1
+
+
 

@@ -1,11 +1,12 @@
 class Czlowiek:
-    def __init__(self,imie,nazwisko,wiek,nrtel,kwota,bilet):
+    def __init__(self,imie,nazwisko,wiek,nrtel,kwota,bilet,mecz):
         self.imie = imie
         self.nazwisko = nazwisko
         self.wiek = wiek
         self.nrtel = nrtel
         self.kwota = kwota
         self.bilet = bilet
+        self.mecz = mecz
 
 
 def bukowanie():
@@ -22,7 +23,15 @@ def bukowanie():
         nrtel = int(input("Podaj numer telefonu: "))
         kwota = int(input("Podaj pelna kwote biletu: "))
         bilet = input("Bilet[ulgowy][normalny][szkolny]: ")
+        mecz = input("Jaki mecz: ")
         x += 1
 
+def mecze():
+    print("[1] => REAL MADRYT VS FC BARCELONA ")
+    print("[2] => PSG VS O.LYON ")
+    print("[3] => CHELASEA VS LIVERPOOL ")
+    print("[4] => BORUSSIA VS MONACHIUM ")
+    print("[5] => JUVENTUS VS NAPOLI ")
+    print("[6] => A.MADRYT VS CELTA VIGO ")
 
 

@@ -46,16 +46,19 @@ def bukowanie():
         x += 1
 
 def mecze():
-    ligowe = int(input("[1]ligowy czy [2]europejski => 1/2 "))
+    ligowe = int(input("[1]ligowy = [2]europejski = [3]wyjscie"))
 
     if ligowe == 1:
+     print("               ")
      print("[1] => REAL MADRYT VS FC BARCELONA ")
      print("[2] => PSG VS O.LYON ")
      print("[3] => CHELASEA VS LIVERPOOL ")
      print("[4] => BORUSSIA VS MONACHIUM ")
      print("[5] => JUVENTUS VS NAPOLI ")
      print("[6] => A.MADRYT VS CELTA VIGO ")
+     print("               ")
     elif ligowe == 2:
+     print("               ")
      print("R.MADRYT VS JUVENTUS")
      print("FC BARCELONA VS MAN.CITY")
      print("PSG VS LIVERPOOL")
@@ -64,9 +67,10 @@ def mecze():
      print("TO.HOTSPUR VS MAN.UTD")
      print("SEVILLA VS AS.MONACO")
      print("INTER MEDIOLAN VS SLASK WROCLAW")
-    else:
-        print("Wprowadzono zle dane, popraw")
-        mecze()
+     print("               ")
+    elif ligowe == 3:
+        print("Wprowadzono zle dane, popraw => ")
+        return
 
 # zapis / odczyt z / do pliku docelowego po dopisaniu 1funckji aktywnej..
 
@@ -83,8 +87,14 @@ print("[4] => pokazywanie konkretnego wiersza z pliku <=  ")
 print("[5] => zmiana nazwy pliku <=  ")
 print("[6] => zliczenie wierszy pliku <=  ")
 print("[7] => zamiana textu w pliku <=  ")
-zdarzenie = int(input("CO CHCESZ ZROBIC?"))
 
+zdarzenie = int(input("CO CHCESZ ZROBIC? =====>"))
+
+if zdarzenie == int:
+    print("niepoprawne dane..")
+else:
+    print("ok..")
+    
 def pokazywanie():
     numer_wiersza = int(input("Podaj numer wiersza, ktory chcesz pobrac"))
     wiersz = linecache.getline("zabukowane.txt",numer_wiersza)
@@ -109,21 +119,24 @@ def zmianaTextu():
     cel.close()
 
 
-if zdarzenie == 1:
+
+def panel():
+  if zdarzenie == 1:
     bukowanie()
-elif zdarzenie == 2:
+  elif zdarzenie == 2:
     mecze()
-elif zdarzenie == 3:
+  elif zdarzenie == 3:
     rfile()
-elif zdarzenie == 4:
+  elif zdarzenie == 4:
    pokazywanie()
-elif zdarzenie == 5:
+  elif zdarzenie == 5:
     zmianaNazwy()
-elif zdarzenie == 6:
+  elif zdarzenie == 6:
     wierszePliku()
-elif zdarzenie == 7:
+  elif zdarzenie == 7:
     zmianaTextu()
-else:
+  else:
     print("BLAD ODCZYTU PODANEJ WARTOSCI")
 
+panel()
 

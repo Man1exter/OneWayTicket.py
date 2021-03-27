@@ -109,21 +109,25 @@ def zmianaTextu():
     cel.close()
 
 
-if zdarzenie == 1:
+
+def panel():
+ while zdarzenie != 10:
+  if zdarzenie == 1:
     bukowanie()
-elif zdarzenie == 2:
+  elif zdarzenie == 2:
     mecze()
-elif zdarzenie == 3:
+  elif zdarzenie == 3:
     rfile()
-elif zdarzenie == 4:
+  elif zdarzenie == 4:
    pokazywanie()
-elif zdarzenie == 5:
+  elif zdarzenie == 5:
     zmianaNazwy()
-elif zdarzenie == 6:
+  elif zdarzenie == 6:
     wierszePliku()
-elif zdarzenie == 7:
+  elif zdarzenie == 7:
     zmianaTextu()
-else:
+  else:
     print("BLAD ODCZYTU PODANEJ WARTOSCI")
 
+panel()
 

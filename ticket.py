@@ -77,6 +77,7 @@ def rfile():
 print("[1] => bukowanie + zapis do pliku <= ")
 print("[2] => zobaczyc aktualne mecze <= ")
 print("[3] => zobaczyc zapisane osoby <=  ")
+print("[4] => usuniecie osoby z pliku <=  ")
 zdarzenie = int(input("CO CHCESZ ZROBIC?"))
 
 def usuwanie():

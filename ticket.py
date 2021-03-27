@@ -79,6 +79,9 @@ print("[2] => zobaczyc aktualne mecze <= ")
 print("[3] => zobaczyc zapisane osoby <=  ")
 zdarzenie = int(input("CO CHCESZ ZROBIC?"))
 
+def usuwanie():
+    print("ok")
+
 if zdarzenie == 1:
     bukowanie()
 elif zdarzenie == 2:
@@ -86,4 +89,4 @@ elif zdarzenie == 2:
 elif zdarzenie == 3:
     rfile()
 elif zdarzenie == 4:
-   print(" ")
+   usuwanie()

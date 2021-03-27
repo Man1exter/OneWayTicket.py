@@ -98,7 +98,12 @@ def wierszePliku():
  print(linie)
 
 def zmianaTextu():
-    print("ok")
+    #Zamiana fragmentu tekstu w pliku
+    zrodlo = open("zabukowane.txt").readlines()
+    cel = open("zabukowane.txt","w")
+    for ele in zrodlo:
+     cel.write(ele.replace(" co zamienic " , " na co "))
+    cel.close()
 
 
 if zdarzenie == 1:
@@ -119,9 +124,3 @@ else:
     print("BLAD ODCZYTU PODANEJ WARTOSCI")
 
 
-#Zamiana fragmentu tekstu w pliku
-#zrodlo = open ( ’ nazwa_pliku ’). readlines ()
-#cel = open ( ’ nazwa_pliku ’ , ’w ’)
-#for s in zrodlo :
-#cel . write ( s . replace (" co zamienic " , " na co "))
-#cel . close ()

@@ -102,8 +102,10 @@ def zmianaTextu():
     #Zamiana fragmentu tekstu w pliku
     zrodlo = open("zabukowane.txt").readlines()
     cel = open("zabukowane.txt","w")
+    zmiana = input("jaki text zmienic? ")
+    naco = input("czym zastapic? ")
     for ele in zrodlo:
-     cel.write(ele.replace(" co zamienic " , " na co "))
+     cel.write(ele.replace(zmiana,naco))
     cel.close()
 
 

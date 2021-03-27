@@ -87,13 +87,6 @@ print("[4] => pokazywanie konkretnego wiersza z pliku <=  ")
 print("[5] => zmiana nazwy pliku <=  ")
 print("[6] => zliczenie wierszy pliku <=  ")
 print("[7] => zamiana textu w pliku <=  ")
-
-zdarzenie = int(input("CO CHCESZ ZROBIC? =====>"))
-
-if zdarzenie == int:
-    print("niepoprawne dane..")
-else:
-    print("ok..")
     
 def pokazywanie():
     numer_wiersza = int(input("Podaj numer wiersza, ktory chcesz pobrac"))
@@ -118,8 +111,6 @@ def zmianaTextu():
      cel.write(ele.replace(zmiana,naco))
     cel.close()
 
-
-
 def panel():
   if zdarzenie == 1:
     bukowanie()
@@ -138,5 +129,13 @@ def panel():
   else:
     print("BLAD ODCZYTU PODANEJ WARTOSCI")
 
-panel()
+###############################################################
+zdarzenie = int(input("CO CHCESZ ZROBIC? =====>"))
 
+if zdarzenie == int:
+    print("niepoprawne dane..")
+else:
+    print("ok..")
+
+panel()
+###############################################################

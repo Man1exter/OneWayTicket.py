@@ -97,6 +97,9 @@ def wierszePliku():
  linie = len ( open ("zabukowane.txt","r").readlines())
  print(linie)
 
+def zmianaTextu():
+    print("ok")
+
 
 if zdarzenie == 1:
     bukowanie()
@@ -110,6 +113,10 @@ elif zdarzenie == 5:
     zmianaNazwy()
 elif zdarzenie == 6:
     wierszePliku()
+elif zdarzenie == 7:
+    zmianaTextu()
+else:
+    print("BLAD ODCZYTU PODANEJ WARTOSCI")
 
 
 #Zamiana fragmentu tekstu w pliku

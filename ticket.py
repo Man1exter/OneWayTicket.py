@@ -46,7 +46,7 @@ def bukowanie():
         x += 1
 
 def mecze():
-    ligowe = int(input("[1]ligowy czy [2]europejski => 1/2 czy [3]wyjscie do panelu =====> "))
+    ligowe = int(input("[1]ligowy = [2]europejski = [3]wyjscie"))
 
     if ligowe == 1:
      print("               ")
@@ -69,7 +69,7 @@ def mecze():
      print("INTER MEDIOLAN VS SLASK WROCLAW")
      print("               ")
     elif ligowe == 3:
-        print("Wprowadzono zle dane, popraw")
+        print("Wprowadzono zle dane, popraw => ")
         return
 
 # zapis / odczyt z / do pliku docelowego po dopisaniu 1funckji aktywnej..
@@ -90,9 +90,11 @@ print("[7] => zamiana textu w pliku <=  ")
 
 zdarzenie = int(input("CO CHCESZ ZROBIC? =====>"))
 
-if zdarzenie != int:
+if zdarzenie == int:
     print("niepoprawne dane..")
-
+else:
+    print("ok..")
+    
 def pokazywanie():
     numer_wiersza = int(input("Podaj numer wiersza, ktory chcesz pobrac"))
     wiersz = linecache.getline("zabukowane.txt",numer_wiersza)
@@ -119,7 +121,6 @@ def zmianaTextu():
 
 
 def panel():
- while zdarzenie != 10:
   if zdarzenie == 1:
     bukowanie()
   elif zdarzenie == 2:

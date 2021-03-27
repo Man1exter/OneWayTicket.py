@@ -98,7 +98,6 @@ def wierszePliku():
  print(linie)
 
 
-
 if zdarzenie == 1:
     bukowanie()
 elif zdarzenie == 2:

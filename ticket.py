@@ -87,7 +87,11 @@ print("[4] => pokazywanie konkretnego wiersza z pliku <=  ")
 print("[5] => zmiana nazwy pliku <=  ")
 print("[6] => zliczenie wierszy pliku <=  ")
 print("[7] => zamiana textu w pliku <=  ")
+
 zdarzenie = int(input("CO CHCESZ ZROBIC? =====>"))
+
+if zdarzenie != int:
+    print("niepoprawne dane..")
 
 def pokazywanie():
     numer_wiersza = int(input("Podaj numer wiersza, ktory chcesz pobrac"))

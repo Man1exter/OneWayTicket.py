@@ -111,3 +111,11 @@ elif zdarzenie == 5:
     zmianaNazwy()
 elif zdarzenie == 6:
     wierszePliku()
+
+
+#Zamiana fragmentu tekstu w pliku
+#zrodlo = open ( ’ nazwa_pliku ’). readlines ()
+#cel = open ( ’ nazwa_pliku ’ , ’w ’)
+#for s in zrodlo :
+#cel . write ( s . replace (" co zamienic " , " na co "))
+#cel . close ()

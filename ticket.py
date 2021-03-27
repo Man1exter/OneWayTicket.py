@@ -81,6 +81,7 @@ print("[2] => zobaczyc aktualne mecze <= ")
 print("[3] => zobaczyc zapisane osoby <=  ")
 print("[4] => pokazywanie konkretnego wiersza z pliku <=  ")
 print("[5] => zmiana nazwy pliku <=  ")
+print("[5] => zliczenie wierszy pliku <=  ")
 zdarzenie = int(input("CO CHCESZ ZROBIC?"))
 
 def pokazywanie():
@@ -91,6 +92,11 @@ def pokazywanie():
 def zmianaNazwy():
   nowy = input("podaj nowa nazwe pliku (NIE ZAPOMNIJ O .TXT) => ")
   os.rename("zabukowane.txt",nowy)
+
+def wierszePliku():
+ linie = len ( open ("zabukowane.txt","r").readlines())
+ print(linie)
+
 
 
 if zdarzenie == 1:
@@ -103,3 +109,5 @@ elif zdarzenie == 4:
    pokazywanie()
 elif zdarzenie == 5:
     zmianaNazwy()
+elif zdarzenie == 6:
+    wierszePliku()

@@ -81,7 +81,8 @@ print("[2] => zobaczyc aktualne mecze <= ")
 print("[3] => zobaczyc zapisane osoby <=  ")
 print("[4] => pokazywanie konkretnego wiersza z pliku <=  ")
 print("[5] => zmiana nazwy pliku <=  ")
-print("[5] => zliczenie wierszy pliku <=  ")
+print("[6] => zliczenie wierszy pliku <=  ")
+print("[7] => zamiana textu w pliku <=  ")
 zdarzenie = int(input("CO CHCESZ ZROBIC?"))
 
 def pokazywanie():

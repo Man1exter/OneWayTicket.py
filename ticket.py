@@ -81,7 +81,8 @@ print("[2] => zobaczyc aktualne mecze <= ")
 print("[3] => zobaczyc zapisane osoby <=  ")
 print("[4] => pokazywanie konkretnego wiersza z pliku <=  ")
 print("[5] => zmiana nazwy pliku <=  ")
-print("[5] => zliczenie wierszy pliku <=  ")
+print("[6] => zliczenie wierszy pliku <=  ")
+print("[7] => zamiana textu w pliku <=  ")
 zdarzenie = int(input("CO CHCESZ ZROBIC?"))
 
 def pokazywanie():
@@ -98,7 +99,14 @@ def wierszePliku():
  print(linie)
 
 def zmianaTextu():
-    print("ok")
+    #Zamiana fragmentu tekstu w pliku
+    zrodlo = open("zabukowane.txt").readlines()
+    cel = open("zabukowane.txt","w")
+    zmiana = input("jaki text zmienic? ")
+    naco = input("czym zastapic? ")
+    for ele in zrodlo:
+     cel.write(ele.replace(zmiana,naco))
+    cel.close()
 
 
 if zdarzenie == 1:
@@ -119,9 +127,3 @@ else:
     print("BLAD ODCZYTU PODANEJ WARTOSCI")
 
 
-#Zamiana fragmentu tekstu w pliku
-#zrodlo = open ( ’ nazwa_pliku ’). readlines ()
-#cel = open ( ’ nazwa_pliku ’ , ’w ’)
-#for s in zrodlo :
-#cel . write ( s . replace (" co zamienic " , " na co "))
-#cel . close ()

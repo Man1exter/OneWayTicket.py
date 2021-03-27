@@ -1,4 +1,5 @@
 import linecache
+import os
 class Czlowiek:
     def __init__(self,imie,nazwisko,wiek,nrtel,kwota,bilet,mecz):
         self.imie = imie
@@ -79,12 +80,18 @@ print("[1] => bukowanie + zapis do pliku <= ")
 print("[2] => zobaczyc aktualne mecze <= ")
 print("[3] => zobaczyc zapisane osoby <=  ")
 print("[4] => pokazywanie konkretnego wiersza z pliku <=  ")
+print("[5] => zmiana nazwy pliku <=  ")
 zdarzenie = int(input("CO CHCESZ ZROBIC?"))
 
 def pokazywanie():
     numer_wiersza = int(input("Podaj numer wiersza, ktory chcesz pobrac"))
     wiersz = linecache.getline("zabukowane.txt",numer_wiersza)
     print(wiersz)
+
+def zmianaNazwy():
+  nowy = input("podaj nowa nazwe pliku (NIE ZAPOMNIJ O .TXT) => ")
+  os.rename("zabukowane.txt",nowy)
+
 
 if zdarzenie == 1:
     bukowanie()
@@ -94,3 +101,5 @@ elif zdarzenie == 3:
     rfile()
 elif zdarzenie == 4:
    pokazywanie()
+elif zdarzenie == 5:
+    zmianaNazwy()

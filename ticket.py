@@ -1,3 +1,4 @@
+import linecache
 class Czlowiek:
     def __init__(self,imie,nazwisko,wiek,nrtel,kwota,bilet,mecz):
         self.imie = imie
@@ -77,11 +78,13 @@ def rfile():
 print("[1] => bukowanie + zapis do pliku <= ")
 print("[2] => zobaczyc aktualne mecze <= ")
 print("[3] => zobaczyc zapisane osoby <=  ")
-print("[4] => usuniecie osoby z pliku <=  ")
+print("[4] => pokazywanie konkretnego wiersza z pliku <=  ")
 zdarzenie = int(input("CO CHCESZ ZROBIC?"))
 
-def usuwanie():
-    print("ok")
+def pokazywanie():
+    numer_wiersza = int(input("Podaj numer wiersza, ktory chcesz pobrac"))
+    wiersz = linecache.getline("zabukowane.txt",numer_wiersza)
+    print(wiersz)
 
 if zdarzenie == 1:
     bukowanie()
@@ -90,4 +93,4 @@ elif zdarzenie == 2:
 elif zdarzenie == 3:
     rfile()
 elif zdarzenie == 4:
-   usuwanie()
+   pokazywanie()

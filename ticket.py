@@ -10,7 +10,6 @@ class Czlowiek:
         self.bilet = bilet
         self.mecz = mecz
 
-
 def bukowanie():
  ile = int(input("Ile osob chce kupic bilet? "))
  plik = open("zabukowane.txt","a")

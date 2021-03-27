@@ -46,16 +46,19 @@ def bukowanie():
         x += 1
 
 def mecze():
-    ligowe = int(input("[1]ligowy czy [2]europejski => 1/2 "))
+    ligowe = int(input("[1]ligowy czy [2]europejski => 1/2 czy [3]wyjscie do panelu =====> "))
 
     if ligowe == 1:
+     print("               ")
      print("[1] => REAL MADRYT VS FC BARCELONA ")
      print("[2] => PSG VS O.LYON ")
      print("[3] => CHELASEA VS LIVERPOOL ")
      print("[4] => BORUSSIA VS MONACHIUM ")
      print("[5] => JUVENTUS VS NAPOLI ")
      print("[6] => A.MADRYT VS CELTA VIGO ")
+     print("               ")
     elif ligowe == 2:
+     print("               ")
      print("R.MADRYT VS JUVENTUS")
      print("FC BARCELONA VS MAN.CITY")
      print("PSG VS LIVERPOOL")
@@ -64,9 +67,10 @@ def mecze():
      print("TO.HOTSPUR VS MAN.UTD")
      print("SEVILLA VS AS.MONACO")
      print("INTER MEDIOLAN VS SLASK WROCLAW")
-    else:
+     print("               ")
+    elif ligowe == 3:
         print("Wprowadzono zle dane, popraw")
-        mecze()
+        return
 
 # zapis / odczyt z / do pliku docelowego po dopisaniu 1funckji aktywnej..
 
@@ -83,7 +87,7 @@ print("[4] => pokazywanie konkretnego wiersza z pliku <=  ")
 print("[5] => zmiana nazwy pliku <=  ")
 print("[6] => zliczenie wierszy pliku <=  ")
 print("[7] => zamiana textu w pliku <=  ")
-zdarzenie = int(input("CO CHCESZ ZROBIC?"))
+zdarzenie = int(input("CO CHCESZ ZROBIC? =====>"))
 
 def pokazywanie():
     numer_wiersza = int(input("Podaj numer wiersza, ktory chcesz pobrac"))
